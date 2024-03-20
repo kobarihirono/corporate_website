@@ -1,13 +1,16 @@
-// Times New Roman（ローカルのWebフォント）
-@font-face {
-    font-family: 'Times New Roman';
-    src: '../font/TimesNewRoman.otf' format('opentype');
-}
+// Inter（Google Fonts）
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+// Noto Sans（Google Fonts）
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
+// Montserrat
+@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-// Noto Serif JP（Google Fonts）
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+// default
+$default-font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", MS PGothic, "ＭＳ Ｐゴシック", sans-serif;
 
-// Times New Roman
-$times-new-roman: 'Times New Roman', serif;
+// Inter
+$inter: "Inter", sans-serif;
 // Noto Serif JP
-$noto-serif: 'Noto Serif JP', serif;
+$noto-sans: "Noto Sans JP", sans-serif;
+// Montserrat
+$montserrat: "Montserrat", sans-serif;

@@ -6,7 +6,6 @@
 
 @import "foundation/font";
 @import "foundation/color";
-@import "foundation/variable";
 @import "foundation/mixin";
 @import "foundation/reset";
 @import "foundation/base";
@@ -23,7 +22,8 @@
 // Component
 // -----------------------------------------------------------------
 
-@import "component/button";
+@import "component/mainButton";
+@import "component/topButton";
 @import "component/mainTitle";
 @import "component/newsItem";
 @import "component/serviceCard";
