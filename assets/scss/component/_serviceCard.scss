@@ -1,2 +1,36 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
+
+.c-serviceCard {
+    width: 33%;
+
+    .c-serviceCard__img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+            // 画像が小さいので引き伸ばす
+            max-width: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            aspect-ratio: 350 / 220;
+        }
+    }
+
+    .c-serviceCard__title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.6px;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .c-serviceCard__context {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21.6px;
+        margin-top: 16px;
+    }
+}

@@ -1,2 +1,12 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
+
+.c-newsItem {
+    display: flex;
+    gap: 16px;
+
+    .c-newsItem__context {
+        font-size: 14px;
+        line-height: 25.2px;
+    }
+}

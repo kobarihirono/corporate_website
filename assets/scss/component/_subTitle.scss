@@ -1,9 +1,8 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
 
-.c-mainTitle {
-    font-size: 36px;
-    line-height: 43.2px;
-    font-weight: bold;
+.c-subTitle {
+    font-size: 13px;
+    line-height: 15.6px;
     color: cl.$c-mainTitle;
 }
