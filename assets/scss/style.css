@@ -8,6 +8,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 ::before,
 ::after {
@@ -443,4 +449,109 @@ button {
   border: none;
   color: inherit;
   cursor: pointer;
+}
+
+.c-mainButton {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19.6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #7633A4, #250D65);
+  color: #FFFFFF;
+  width: 220px;
+  height: 56px;
+  border: 1px solid #333333;
+  border-radius: 50px;
+  padding: 20px;
+  cursor: pointer;
+}
+.c-mainButton a {
+  padding-left: 62px;
+}
+
+.c-clearButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 56px;
+  border: 1px solid #333333;
+  border-radius: 50px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.c-mainTitle {
+  font-size: 36px;
+  line-height: 43.2px;
+  font-weight: bold;
+  color: #391E88;
+}
+
+.c-subTitle {
+  font-size: 13px;
+  line-height: 15.6px;
+  color: #391E88;
+}
+
+.c-time {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 25.2px;
+  color: #000000;
+}
+
+.c-newsIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 26px;
+  border-radius: 50px;
+  background-color: #dcdcdc;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21.6px;
+}
+
+.c-newsItem {
+  display: flex;
+  gap: 16px;
+}
+.c-newsItem .c-newsItem__context {
+  font-size: 14px;
+  line-height: 25.2px;
+}
+
+.c-serviceCard {
+  width: 33%;
+}
+.c-serviceCard .c-serviceCard__img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.c-serviceCard .c-serviceCard__img img {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 350/220;
+}
+.c-serviceCard .c-serviceCard__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  text-align: center;
+  margin-top: 16px;
+}
+.c-serviceCard .c-serviceCard__context {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.6px;
+  margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */

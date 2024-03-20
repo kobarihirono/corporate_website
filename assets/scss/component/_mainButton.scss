@@ -1,2 +1,25 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
+@use "../foundation/font" as fs;
+
+.c-mainButton {
+    font-family: fs.$montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 19.6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, cl.$c-mainButton-light, cl.$c-mainButton-dark);    
+    color: cl.$c-white;
+    width: 220px;
+    height: 56px;
+    border: 1px solid cl.$c-mainFont;
+    border-radius: 50px;
+    padding: 20px;
+    cursor: pointer;
+
+    a {
+        padding-left: 62px;
+    }
+}

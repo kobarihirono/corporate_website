@@ -1,15 +1,14 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
 
-.c-newsIcon {
+.c-clearButton {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
-    height: 26px;
+    width: 220px;
+    height: 56px;
+    border: 1px solid cl.$c-mainFont;
     border-radius: 50px;
-    background-color: cl.$c-gainsboro;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 21.6px;
+    padding: 20px;
+    cursor: pointer;
 }

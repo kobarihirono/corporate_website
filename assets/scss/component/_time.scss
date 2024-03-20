@@ -1,0 +1,10 @@
+@use "../foundation/color" as cl;
+@use "../foundation/mixin" as bp;
+@use "../foundation/font" as fs;
+
+.c-time {
+    font-family: fs.$montserrat;
+    font-size: 14px;
+    line-height: 25.2px;
+    color: cl.$c-black;
+}
