@@ -14,8 +14,10 @@
 // Layout
 // ==========================================================================
 
-@import "layout/footer";
 @import "layout/header";
+@import "layout/subHeader";
+@import "layout/footer";
+@import "layout/contact";
 @import "layout/main";
 
 // -----------------------------------------------------------------
@@ -24,7 +26,6 @@
 
 @import "component/mainButton";
 @import "component/clearButton";
-@import "component/buttonTriangle";
 @import "component/mainTitle";
 @import "component/_subTitle";
 @import "component/time";
@@ -33,6 +34,7 @@
 @import "component/serviceCard";
 @import "component/serviceContext";
 @import "component/workCard";
+@import "component/pager";
 
 // -----------------------------------------------------------------
 // Project

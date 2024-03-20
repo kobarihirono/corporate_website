@@ -9,8 +9,8 @@
     line-height: 19.6px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-image: linear-gradient(to right, cl.$c-mainButton-light, cl.$c-mainButton-dark);    
+    justify-content: center;
+    background-image: linear-gradient(to right, cl.$c-mainButton-light, cl.$c-mainButton-dark);
     color: cl.$c-white;
     width: 220px;
     height: 56px;
@@ -20,6 +20,11 @@
     cursor: pointer;
 
     a {
-        padding-left: 62px;
+        flex: 1;
+        text-align: center;
+    }
+
+    img {
+        margin-left: auto;
     }
 }

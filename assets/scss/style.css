@@ -1,18 +1,16 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 ::before,
@@ -458,7 +456,7 @@ button {
   line-height: 19.6px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-image: linear-gradient(to right, #7633A4, #250D65);
   color: #FFFFFF;
   width: 220px;
@@ -469,10 +467,18 @@ button {
   cursor: pointer;
 }
 .c-mainButton a {
-  padding-left: 62px;
+  flex: 1;
+  text-align: center;
+}
+.c-mainButton img {
+  margin-left: auto;
 }
 
 .c-clearButton {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19.6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -482,6 +488,13 @@ button {
   border-radius: 50px;
   padding: 20px;
   cursor: pointer;
+}
+.c-clearButton a {
+  flex: 1;
+  text-align: center;
+}
+.c-clearButton img {
+  margin-left: auto;
 }
 
 .c-mainTitle {
