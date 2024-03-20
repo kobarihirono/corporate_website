@@ -649,4 +649,37 @@ button {
   font-weight: 400;
   line-height: 21.6px;
   margin-top: 16px;
+}
+
+.c-serviceContext {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+}
+.c-serviceContext .c-serviceContext__img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.c-serviceContext .c-serviceContext__img img {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 350/220;
+}
+.c-serviceContext .c-serviceContext__textarea {
+  width: 60%;
+}
+.c-serviceContext .c-serviceContext__textarea .c-serviceContext__textarea-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 43.2px;
+}
+.c-serviceContext .c-serviceContext__textarea .c-serviceContext__textarea-text {
+  font-size: 15px;
+  line-height: 27px;
+  margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */
