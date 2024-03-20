@@ -1,6 +1,6 @@
-@use "../foundation/color" as cl;
-@use "../foundation/mixin" as bp;
-@use "../foundation/font" as fs;
+@use "../../foundation/color" as cl;
+@use "../../foundation/mixin" as bp;
+@use "../../foundation/font" as fs;
 
 .c-clearButton {
     font-family: fs.$montserrat;

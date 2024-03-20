@@ -1,0 +1,55 @@
+@use "../../foundation/color" as cl;
+@use "../../foundation/mixin" as bp;
+@use "../../foundation/font" as fs;
+
+.c-breadcrumb {
+    width: 100%;
+    background-color: cl.$c-gray;
+    font-family: fs.$montserrat;
+    font-size: 12px;
+    line-height: 21.6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 7%;
+
+    .c-breadcrumb__inner {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .c-breadcrumb__home {
+        color: cl.$c-mainTitle;
+    }
+
+    .c-breadcrumb__arrow {
+        display: inline-block;
+        // 矢印位置の微調整
+        position: relative;
+        top: -24%;
+        width: 0;
+        height: 0;
+    }
+
+    .c-breadcrumb__arrow::before,
+    .c-breadcrumb__arrow::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 7px;
+        height: 1px;
+        background: cl.$c-mainFont;
+    }
+
+    .c-breadcrumb__arrow::before {
+        transform: rotate(160deg);
+        transform-origin: bottom left;
+    }
+
+    .c-breadcrumb__arrow::after {
+        transform: rotate(-160deg);
+        transform-origin: bottom left;
+    }
+
+
+}
