@@ -1,2 +1,22 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
+@use "../foundation/font" as fs;
+
+.l-header {
+    font-family: fs.$montserrat;
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+
+    .l-header__nav {
+        font-size: 14px;
+        line-height: 25.6px;
+
+        .l-header__nav-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            cursor: pointer;
+        }
+    }
+}

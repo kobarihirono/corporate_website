@@ -1,2 +1,28 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
+@use "../foundation/font" as fs;
+
+.l-header-sub {
+    font-family: fs.$montserrat;
+    text-align: center;
+    margin-top: 15%;
+
+    .l-header-sub__main-title {
+        font-size: 72px;
+        font-weight: bold;
+        line-height: 72px;
+    }
+
+    .l-header-sub__sub-title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 43.2px;
+        margin-top: 20px;
+    }
+
+    .l-header-sub__button {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+}

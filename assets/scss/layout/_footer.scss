@@ -1,2 +1,31 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
+@use "../foundation/font" as fs;
+
+.l-footer {
+    font-family: fs.$montserrat;
+    background-color: cl.$c-bgFooter;
+    color: cl.$c-white;
+    height: 190px;
+
+    .l-footer__nav {
+        padding-top: 64px;
+
+        .l-footer__nav-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .l-footer__nav-list-item {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .l-footer__copy {
+        font-size: 10px;
+        color: cl.$c-purpleFont;
+        text-align: center;
+        margin-top: 28px;
+    }
+}
