@@ -1,0 +1,13 @@
+@use "../../foundation/color" as cl;
+@use "../../foundation/mixin" as bp;
+
+.c-pagers {
+    display: flex;
+    gap: 10px;
+
+    .c-pagers__first {
+        color: cl.$c-mainFont;
+        background-color: cl.$c-newsNow;
+        background-image: none;
+    }
+}

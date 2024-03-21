@@ -14,25 +14,29 @@
 // Layout
 // ==========================================================================
 
-@import "layout/footer";
 @import "layout/header";
+@import "layout/subHeader";
+@import "layout/footer";
+@import "layout/contact";
 @import "layout/main";
 
 // -----------------------------------------------------------------
 // Component
 // -----------------------------------------------------------------
 
-@import "component/mainButton";
-@import "component/clearButton";
-@import "component/buttonTriangle";
-@import "component/mainTitle";
-@import "component/_subTitle";
-@import "component/time";
-@import "component/newsIcon";
-@import "component/newsItem";
-@import "component/serviceCard";
-@import "component/serviceContext";
-@import "component/workCard";
+@import "component/global/mainButton";
+@import "component/global/clearButton";
+@import "component/global/mainTitle";
+@import "component/global/subTitle";
+@import "component/global/breadcrumb";
+@import "component/news/time";
+@import "component/news/newsIcon";
+@import "component/news/newsItem";
+@import "component/news/pager";
+@import "component/news/pagers";
+@import "component/service/serviceCard";
+@import "component/service/serviceContext";
+@import "component/works/workCard";
 
 // -----------------------------------------------------------------
 // Project

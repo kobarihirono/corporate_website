@@ -1,18 +1,28 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 ::before,
@@ -458,7 +468,7 @@ button {
   line-height: 19.6px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-image: linear-gradient(to right, #7633A4, #250D65);
   color: #FFFFFF;
   width: 220px;
@@ -469,10 +479,18 @@ button {
   cursor: pointer;
 }
 .c-mainButton a {
-  padding-left: 62px;
+  flex: 1;
+  text-align: center;
+}
+.c-mainButton img {
+  margin-left: auto;
 }
 
 .c-clearButton {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19.6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -482,6 +500,13 @@ button {
   border-radius: 50px;
   padding: 20px;
   cursor: pointer;
+}
+.c-clearButton a {
+  flex: 1;
+  text-align: center;
+}
+.c-clearButton img {
+  margin-left: auto;
 }
 
 .c-mainTitle {
@@ -495,6 +520,49 @@ button {
   font-size: 13px;
   line-height: 15.6px;
   color: #391E88;
+}
+
+.c-breadcrumb {
+  width: 100%;
+  background-color: #F7F7F7;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 21.6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 7%;
+}
+.c-breadcrumb .c-breadcrumb__inner {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.c-breadcrumb .c-breadcrumb__home {
+  color: #391E88;
+}
+.c-breadcrumb .c-breadcrumb__arrow {
+  display: inline-block;
+  position: relative;
+  top: -24%;
+  width: 0;
+  height: 0;
+}
+.c-breadcrumb .c-breadcrumb__arrow::before,
+.c-breadcrumb .c-breadcrumb__arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 7px;
+  height: 1px;
+  background: #333333;
+}
+.c-breadcrumb .c-breadcrumb__arrow::before {
+  transform: rotate(160deg);
+  transform-origin: bottom left;
+}
+.c-breadcrumb .c-breadcrumb__arrow::after {
+  transform: rotate(-160deg);
+  transform-origin: bottom left;
 }
 
 .c-time {
@@ -526,6 +594,33 @@ button {
   line-height: 25.2px;
 }
 
+.c-pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  background-image: linear-gradient(to right, #7633A4, #250D65);
+  cursor: pointer;
+}
+.c-pager .c-pager__num {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.c-pagers {
+  display: flex;
+  gap: 10px;
+}
+.c-pagers .c-pagers__first {
+  color: #333333;
+  background-color: #F1EBF8;
+  background-image: none;
+}
+
 .c-serviceCard {
   width: 33%;
 }
@@ -553,5 +648,38 @@ button {
   font-size: 15px;
   font-weight: 400;
   line-height: 21.6px;
+  margin-top: 16px;
+}
+
+.c-serviceContext {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+}
+.c-serviceContext .c-serviceContext__img {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.c-serviceContext .c-serviceContext__img img {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 350/220;
+}
+.c-serviceContext .c-serviceContext__textarea {
+  width: 60%;
+}
+.c-serviceContext .c-serviceContext__textarea .c-serviceContext__textarea-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 43.2px;
+}
+.c-serviceContext .c-serviceContext__textarea .c-serviceContext__textarea-text {
+  font-size: 15px;
+  line-height: 27px;
   margin-top: 16px;
 }/*# sourceMappingURL=style.css.map */

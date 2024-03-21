@@ -1,0 +1,20 @@
+@use "../../foundation/color" as cl;
+@use "../../foundation/mixin" as bp;
+
+.c-pager {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: cl.$c-white;
+    background-image: linear-gradient(to right, cl.$c-mainButton-light, cl.$c-mainButton-dark);
+    cursor: pointer;
+
+    .c-pager__num {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 20px;
+    }
+}

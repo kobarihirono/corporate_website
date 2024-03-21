@@ -1,0 +1,41 @@
+@use "../../foundation/color" as cl;
+@use "../../foundation/mixin" as bp;
+@use "../../foundation/font" as fs;
+
+.c-serviceContext {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+
+    .c-serviceContext__img {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            // 画像が小さいので引き伸ばす
+            max-width: 100%;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            aspect-ratio: 350 / 220;
+        }
+    }
+
+    .c-serviceContext__textarea {
+        width: 60%;
+
+        .c-serviceContext__textarea-title {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 43.2px;
+        }
+
+        .c-serviceContext__textarea-text {
+            font-size: 15px;
+            line-height: 27px;
+            margin-top: 16px;
+        }
+    }
+}
