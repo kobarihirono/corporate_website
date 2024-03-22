@@ -1,3 +1,26 @@
 @use "../../foundation/color" as cl;
 @use "../../foundation/mixin" as bp;
 @use "../../foundation/font" as fs;
+
+.c-workCard {
+    flex-basis: calc(32% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+    .c-workCard__img {
+        object-fit: cover;
+        aspect-ratio: 350 / 282;
+        border: 1px solid cl.$c-imgBorder;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .c-workCard__text {
+        font-size: 16px;
+        line-height: 28.8px;
+        text-align: center;
+        margin-top: 16px;
+    }
+}

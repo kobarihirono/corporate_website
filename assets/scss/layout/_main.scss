@@ -2,11 +2,15 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
 
-.l-header-bg {
+.l-header-bg-top {
     background-image: url("/assets/img/bg/bg_header.png");
     width: 100%;
     height: 100vh;
     object-fit: cover;
     background-size: 100% 100%;
     color: cl.$c-white;
+}
+
+.l-header-bg {
+    height: 240px;
 }

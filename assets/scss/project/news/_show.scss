@@ -1,2 +1,96 @@
 @use "../../foundation/color" as cl;
 @use "../../foundation/mixin" as bp;
+
+.p-news-show {
+    width: 50%;
+    margin: auto;
+    padding: 64px 0;
+
+    .p-news-show__title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .p-news-show__news-time {
+        margin-top: 14px;
+    }
+
+    .p-news-show__img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 720 / 384;
+        margin-top: 24px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .p-news-show__context {
+        font-size: 16px;
+        line-height: 28.8px;
+        padding: 32px 0; 
+
+        .p-news-show__context-main-title {
+            position: relative;
+            font-size: 24px;
+            line-height: 38.4px;
+            font-weight: bold;
+            padding-left: 24px;
+            margin-top: 48px;
+            margin-bottom: 28px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 6px;
+                background-color: cl.$c-mainTitle;
+                border-radius: 4px;
+            }
+        }
+
+        .p-news-show__context-sub-title {
+            font-size: 15px;
+            line-height: 27px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 24px;
+        }
+
+        .p-news-show__context-text {
+            margin-top: 32px;
+        }
+    }
+
+    .p-news-show__pagers {
+        color: cl.$c-mainTitle;
+
+        .p-news-show__pagers-items {
+            display: flex;
+            margin-top: 32px;
+            border-top: 2px solid cl.$c-lightPurple;
+            border-bottom: 2px solid cl.$c-lightPurple;
+            padding: 10px 0;
+        }
+
+        .p-news-show__pagers-item {
+            padding: 34px;
+            width: 50%;
+            box-sizing: border-box;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                border-right: 2px solid cl.$c-lightPurple;
+            }
+        }
+
+        .p-news-show__pagers-all {
+            display: block;
+            text-align: center;
+            margin-top: 24px;
+        }
+    }
+}

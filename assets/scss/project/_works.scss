@@ -1,2 +1,18 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
+
+.p-works {
+    width: 78%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 120px 0;
+
+    .p-works__item {
+        margin-right: 3%;
+
+        &:nth-child(3n) {
+            margin-left: 0;
+        }
+    }
+}
