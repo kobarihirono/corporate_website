@@ -1,2 +1,24 @@
 @use "../../foundation/color" as cl;
 @use "../../foundation/mixin" as bp;
+
+.p-news-index {
+
+    .p-news-index__newsItems {
+        width: 76%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin: auto;
+        padding-top: 80px;
+
+        .p-news-index__newsItems-item {
+            justify-content: center;
+        }
+    }
+
+    .p-news-index__pagers {
+        justify-content: center;
+        margin-top: 36px;
+        margin-bottom: 80px;
+    }
+}
