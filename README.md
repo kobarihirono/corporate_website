@@ -10,11 +10,11 @@
 - **SCSS**: スタイリング
 - **JavaScript**: インタラクティビティ
 - **jQuery**: フロントバリデーションなどのプラグインの活用
-- **PHP**: サーバーサイドロジック
+- **PHP**: 共通部品の読み込み
 
 ### 前提条件
 
-プロジェクトを開始する前に、以下のツールがインストールされていることを確認してください:
+プロジェクトを開始する前に、以下のツールがインストールされていることを確認してください
 
 - VisualStudio Code
 - Live Sass Compiler
@@ -23,7 +23,7 @@
 
 ## 命名規則
 
-プロジェクト内での一貫性を保つため、以下の命名規則に従ってください:
+プロジェクト内での一貫性を保つため、以下の命名規則に従ってください
 
 ### HTML & CSS (SCSS)
 
@@ -35,45 +35,60 @@
 - **変数**: キャメルケースを使用し、`let myVariable` の形式で命名します。
 - **関数**: 動詞を先頭にしたキャメルケースを使用し、`function performAction()` の形式で命名します。
 
-### PHP
+## プロジェクト全体構成
 
-- **変数**: スネークケースを使用し、`$my_variable` の形式で命名します。
-- **関数**: キャメルケースを使用し、`function myFunction()` の形式で命名します。
+プロジェクト管理を効率化するため、以下のようなファイル構成を採用します
 
-この命名規則は一般的なガイドラインに基づいており、プロジェクトの要件に応じて適宜調整することが重要です。
+```plaintext
+project/
+|
+|-- assets/ # プロジェクトで使用するjs,画像など
+|
+|-- layout/ # プロジェクト全体で使用する共通パーツ
+|   |-- _header.html # ヘッダー
+|   |-- _footer.html # フッター
+|   |-- _head.html # メタデータなど
+|   |-- _...
+|
+|-- index.php # layout ファイルを include するページごとのファイル
+`-- ...
+```
 
 ## SCSS ファイル構成
 
-プロジェクトのスタイル管理を効率化するため、以下のような SCSS ファイル構成を採用します:
+スタイル管理を効率化するため、以下のような SCSS ファイル構成を採用します
 
 - **ファイル構成**: FLOCSS 方式を採用します。
 
+```plaintext
 scss/
 |
 |-- foundation/ # サイト全体で使用する変数や mixin など
-| |-- \_color.scss # color 変数
-| |-- \_variable.scss # color 以外の変数
-| |-- \_mixins.scss # @mixin 変数
-| |-- \_font.scss # フォント変数
-| |-- \_base.scss # 共通設定
-| |-- \_reset.scss # リセット css
+|   |-- _color.scss # color 変数
+|   |-- _variable.scss # color 以外の変数
+|   |-- _mixins.scss # @mixin 変数
+|   |-- _font.scss # フォント変数
+|   |-- _base.scss # 共通設定
+|   |-- _reset.scss # リセット css
+|   |-- _animation.scss # アニメーションとjsクラス
 |
 |-- components/ # 再利用可能な UI コンポーネント
-| |-- \_buttons.scss # ボタン
-| |-- \_title.scss # タイトル
-| |-- \_...
+|   |-- _buttons.scss # ボタン
+|   |-- _title.scss # タイトル
+|   |-- _...
 |
 |-- layout/ # 大枠のレイアウト定義
-| |-- \_header.scss # ヘッダー
-| |-- \_footer.scss # フッター
-| |-- \_main.scss # ページ内の body,main 部分
-| |-- \_...
+|   |-- _header.scss # ヘッダー
+|   |-- _footer.scss # フッター
+|   |-- _main.scss # ページ内の body,main 部分
+|   |-- _...
 |
 |-- project/ # ページ固有のスタイル
-| |-- \_index.scss # ホームページ
-| |-- \_...
+|   |-- _index.scss # ホームページ
+|   |-- _...
 |
 `-- style.scss # 上記のパーツをインポートするメインファイル
+```
 
 ### `foundation/`
 
@@ -83,6 +98,7 @@ scss/
   - `color.scss`のクラス名は`.c-[カラー名]`で定義します。
   - margin などの font,color 以外の共通変数は`_variables.scss`に定義します。
   - 再利用可能な mixin とメディアクエリは`_mixins.scss`に定義します。
+  - keyframe と js で追加するクラス名、スタイリングは`_animation.scss`に定義します。
 
 ### `components/`
 
@@ -98,16 +114,16 @@ scss/
 - **ルール**:
   - 複数のページ（もしくは全ページ）に共通して現れる大きい要素を定義します。
   - 量産ページやテンプレートページのスタイルも layout に格納してください。
-  - クラス名は`.l-[セクション名]`で定義します。例: `.l-header`, `.l-footer`。
+  - クラス名は`.l-[ファイル名]`で定義します。例: `.l-header`, `.l-footer`。
 
 ### `project/`
 
 - **目的**: 各ページ固有のスタイルを格納します。
 - **ルール**:
-  - ページ名に基づいたファイル名を使用します。例: `_home.scss`, `_contact.scss`。
+  - ページ名に基づいたファイル名を使用します。例: `_index.scss`, `_contact.scss`。
   - これらのファイルは、そのページに固有のスタイルのみを定義してください。
   - コンポーネント間の余白は project に定義してください。
-  - クラス名は`.p-[ページ名]-[セクション名]`で定義します。例: `.p-index-about`, `.p-contact`。
+  - クラス名は`.p-[ファイル名]-[セクション名]`で定義します。例: `.p-index-about`, `.p-contact__form`
 
 ### `style.scss`
 

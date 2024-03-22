@@ -4,11 +4,10 @@
 .p-news-index {
 
     .p-news-index__newsItems {
-        width: 76%;
+        @include content-center(64%);
         display: flex;
         flex-direction: column;
         gap: 14px;
-        margin: auto;
         padding-top: 80px;
 
         .p-news-index__newsItems-item {
