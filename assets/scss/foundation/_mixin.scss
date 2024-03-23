@@ -35,6 +35,14 @@ $mq-breakpoints: (
     margin-top: 64px;
 }
 
+// フォームの共通スタイリング
+@mixin form($bg-color, $border-color) {
+    background-color: $bg-color;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    padding: 10px;
+}
+
 // 下線が左から右に流れるホバーアニメーション
 @mixin hover-underline($color) {
     display: inline-block;

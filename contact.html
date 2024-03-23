@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/logo/favicon.png"
+      sizes="192x192"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/assets/scss/style.css" />
+    <title>PON DESIGN</title>
+  </head>
+  <body>
+    <div class="l-header-bg-top l-header-bg">
+      <header class="l-header">
+        <figure class="l-header__logo">
+          <img src="/assets/img/logo/logo.png" />
+        </figure>
+        <nav class="l-header__nav">
+          <ul class="l-header__nav-list">
+            <li class="l-header__nav-list-item"><a href="">NEWS</a></li>
+            <li class="l-header__nav-list-item"><a href="">SERVICE</a></li>
+            <li class="l-header__nav-list-item"><a href="">WORKS</a></li>
+            <li class="l-header__nav-list-item"><a href="">COMPANY</a></li>
+            <li class="l-header__nav-list-item"><a href="">RECRUIT</a></li>
+            <li class="l-header__nav-list-item"><a href="">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="l-header-sub">
+        <h1 class="l-header-sub__main-title">CONTACT</h1>
+        <p class="l-header-sub__sub-title">お問い合わせ</p>
+      </div>
+      <!-- .l-header-sub -->
+    </div>
+    <!-- .l-header-bg -->
+
+    <main>
+      <nav aria-label="Breadcrumb" class="c-breadcrumb">
+        <ol class="c-breadcrumb__inner">
+          <li class="c-breadcrumb__home">
+            <a href="/">HOME</a>
+          </li>
+          <li><span class="c-breadcrumb__arrow"></span></li>
+          <li aria-current="page" class="c-breadcrumb__now">CONTACT</li>
+        </ol>
+      </nav>
+      <!-- .c-breadcrumb -->
+
+      <div class="p-contact">
+        <p class="p-contact__text">
+          Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。
+        </p>
+
+        <form class="p-contact__form" action="" method="post">
+          <fieldset>
+            <ul class="p-contact__form-list">
+              <li class="p-contact__form-list-item">
+                <legend class="p-contact__form-list-item-label">
+                  お問い合わせ種別<span class="required">*必須</span>
+                </legend>
+                <div class="p-contact__form-list-item-radio">
+                  <div class="p-contact__form-list-item-radio-item">
+                    <input
+                      type="radio"
+                      id="work_request"
+                      name="inquiry_type"
+                      value="お仕事のご依頼・ご相談"
+                    />
+                    <label for="work_request">お仕事のご依頼・ご相談</label>
+                  </div>
+                  <div class="p-contact__form-list-item-radio-item">
+                    <input
+                      type="radio"
+                      id="estimate_request"
+                      name="inquiry_type"
+                      value="お見積りのご依頼"
+                    />
+                    <label for="estimate_request">お見積りのご依頼</label>
+                  </div>
+                  <div class="p-contact__form-list-item-radio-item">
+                    <input
+                      type="radio"
+                      id="recruitment"
+                      name="inquiry_type"
+                      value="採用について"
+                    />
+                    <label for="recruitment">採用について</label>
+                  </div>
+                  <div class="p-contact__form-list-item-radio-item">
+                    <input
+                      type="radio"
+                      id="other"
+                      name="inquiry_type"
+                      value="その他"
+                    />
+                    <label for="other">その他</label>
+                  </div>
+                </div>
+                <!-- .p-contact__form-list-item-radio -->
+              </li>
+              <li class="p-contact__form-list-item">
+                <label class="p-contact__form-list-item-label" for="name"
+                  >お名前<span class="required">*必須</span></label
+                >
+                <input
+                  class="p-contact__form-list-item-input"
+                  type="text"
+                  id="name"
+                  name="user_name"
+                />
+              </li>
+              <li class="p-contact__form-list-item">
+                <label class="p-contact__form-list-item-label" for="company"
+                  >会社名<span class="required">*必須</span></label
+                >
+                <input
+                  class="p-contact__form-list-item-input"
+                  type="text"
+                  id="company"
+                  name="user_company"
+                />
+              </li>
+              <li class="p-contact__form-list-item">
+                <label class="p-contact__form-list-item-label" for="mail"
+                  >メールアドレス<span class="required">*必須</span></label
+                >
+                <input
+                  class="p-contact__form-list-item-input"
+                  type="email"
+                  id="mail"
+                  name="user_email"
+                />
+              </li>
+              <li class="p-contact__form-list-item">
+                <label class="p-contact__form-list-item-label" for="tel"
+                  >電話番号<span class="tell-about"
+                    >（半角数字ハイフンなし）</span
+                  ></label
+                >
+                <input
+                  class="p-contact__form-list-item-input"
+                  type="text"
+                  id="tel"
+                  name="user_tel"
+                />
+              </li>
+              <li class="p-contact__form-list-item">
+                <label class="p-contact__form-list-item-label" for="msg"
+                  >お問い合わせ内容</label
+                >
+                <textarea
+                  id="msg"
+                  class="p-contact__form-list-item-textarea"
+                  name="user_message"
+                  placeholder="お問い合わせ内容を具体的にご記入くださいませ。"
+                ></textarea>
+              </li>
+              <li class="p-contact__form-list-item">
+                <label class="p-contact__form-list-item-label" for="know"
+                  >PON DESIGNをどちらでお知りになりましたか？<span
+                    class="required"
+                    >*必須</span
+                  ></label
+                >
+                <select class="p-contact__form-list-item-input" name="" id="">
+                  <option value="">選択してください</option>
+                  <option value="">Google/Yahoo検索</option>
+                  <option value="">SNS</option>
+                  <option value="">ブログ</option>
+                  <option value="">友人や知人</option>
+                  <option value="">その他</option>
+                </select>
+              </li>
+            </ul>
+
+            <div class="p-contact__form-button">
+              <div class="c-mainButton">
+                <a href="contact.html">送信する</a>
+                <img src="/assets/img/logo/caret-right_14px.png" />
+              </div>
+              <!-- .c-mainButton -->
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <section class="l-contact">
+        <div class="l-contact__title">
+          <h2 class="c-mainTitle">CONTACT</h2>
+          <p class="c-subTitle">お問い合わせ</p>
+        </div>
+        <p class="l-contact__message">
+          Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。
+        </p>
+        <div class="l-contact__button">
+          <div class="c-mainButton">
+            <a href="contact.html"> MORE </a>
+            <img src="/assets/img/logo/caret-right_14px.png" />
+          </div>
+          <!-- .c-mainButton -->
+        </div>
+        <!-- .l-contact__button -->
+      </section>
+    </main>
+
+    <footer class="l-footer">
+      <nav class="l-footer__nav">
+        <ul class="l-footer__nav-list">
+          <li class="l-footer__nav-list-item">
+            <a href="news/index.html">NEWS</a>
+          </li>
+          <li class="l-footer__nav-list-item">
+            <a href="service.html">SERVICE</a>
+          </li>
+          <li class="l-footer__nav-list-item">
+            <a href="works.html">WORKS</a>
+          </li>
+          <li class="l-footer__nav-list-item">
+            <a href="company.html">COMPANY</a>
+          </li>
+          <li class="l-footer__nav-list-item">
+            <a href="recruit.html">RECRUIT</a>
+          </li>
+          <li class="l-footer__nav-list-item">
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="l-footer__copy">&copy; PON DESIGN</p>
+    </footer>
+  </body>
+</html>

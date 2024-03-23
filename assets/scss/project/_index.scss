@@ -78,8 +78,7 @@
     position: relative;
     width: 88%;
     margin: auto;
-    overflow: hidden;
-    padding: 64px 0;
+    padding: 132px 0;
 
     .p-index-company__bg {
         position: absolute;
@@ -88,6 +87,12 @@
         width: 100%;
         height: 100%;
         z-index: 1;
+        aspect-ratio: 1300 / 615.5;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     .p-index-company__context {
