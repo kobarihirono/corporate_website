@@ -77,8 +77,9 @@
 .p-index-company {
     position: relative;
     width: 88%;
+    max-width: 1500px;
     margin: auto;
-    padding: 132px 0;
+    padding: 8% 0;
 
     .p-index-company__bg {
         position: absolute;
@@ -134,9 +135,11 @@
 
 .p-index-recruit {
     display: flex;
+    position: relative;
     width: 77%;
     margin: auto;
     padding: 64px 0;
+    z-index: 10;
 
     .p-index-recruit__context {
         display: flex;

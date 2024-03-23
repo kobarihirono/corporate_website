@@ -6,20 +6,19 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 3%;
 
     .c-serviceContext__img {
         width: 40%;
+        height: 100%;
         display: flex;
         justify-content: center;
+        aspect-ratio: 350 / 220;
 
         img {
-            // 画像が小さいので引き伸ばす
-            max-width: 100%;
-            min-width: 100%;
-            min-height: 100%;
+            width: 100%;
             object-fit: cover;
-            aspect-ratio: 350 / 220;
         }
     }
 

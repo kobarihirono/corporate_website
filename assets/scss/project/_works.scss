@@ -3,16 +3,10 @@
 
 .p-works {
     width: 78%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: end;
+    gap: 3rem;    
     margin: auto;
     padding: 120px 0;
-
-    .p-works__item {
-        margin-right: 3%;
-
-        &:nth-child(3n) {
-            margin-left: 0;
-        }
-    }
 }
