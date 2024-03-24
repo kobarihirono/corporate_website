@@ -1,2 +1,124 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
+@use "../foundation/font" as fs;
+
+.p-recruit {
+    background-image: url("/assets/img/bg/bg_recruit.png");
+    padding: 120px 0;
+
+    .p-recruit__title {
+        width: 78%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 36px;
+
+        .p-recruit__title-main {
+            font-family: $montserrat;
+            font-size: 72px;
+            line-height: 72px;
+            font-weight: bold;
+            color: cl.$c-mainTitle;
+        }
+
+        .p-recruit__title-sub {
+            font-size: 32px;
+            line-height: 53.6px;
+            color: cl.$c-mainTitle;
+            margin-top: 18px;
+        }
+
+        .p-recruit__title-text {
+            font-size: 16px;
+            line-height: 28.8px;
+            margin-top: 18px;
+        }
+    }
+
+    .p-recruit__img {
+        width: 100%;
+        aspect-ratio: 1440 / 824;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .p-recruit__context {
+        width: 78%;
+        margin: auto;
+        padding: 80px 0;
+
+        .p-recruit__context-title {
+            text-align: center;
+        }
+
+        .p-recruit__context-inner {
+            background-color: cl.$c-white;
+            border: 1px solid cl.$c-lightPurple-bark;
+            padding: 50px;
+            margin-top: 36px;
+        }
+
+        .p-recruit__context-title {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 43.2px;
+            text-align: center;
+        }
+
+        .p-recruit__context-list {
+            margin-top: 36px;
+    
+            .p-recruit__context-list-item {
+                display: flex;
+                padding: 26px;
+                border-bottom: 1px solid cl.$c-lightGray;
+    
+                .p-recruit__context-list-item-title {
+                    width: 24%;
+                }
+    
+                .p-recruit__context-list-item-text {
+                    width: 70%;
+
+                    .p-recruit__context-list-item-text-list {
+                        margin-top: 18px;
+                    }
+                }
+            }
+        }
+
+        .p-recruit__context-button {
+            @include button-center;
+            margin-top: 36px;
+        }
+
+        .p-recruit__context-link {
+            font-size: 12px;
+            line-height: 21.6px;
+            text-align: center;
+            margin-top: 12px;
+        }
+    }
+
+    .p-recruit__video {
+        width: 78%;
+        margin: auto;
+
+        .p-recruit__video-title {
+            text-align: center;
+        }
+
+        .p-recruit__video-img {
+            width: 100%;
+            aspect-ratio: 1110 / 624;
+            margin-top: 36px;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

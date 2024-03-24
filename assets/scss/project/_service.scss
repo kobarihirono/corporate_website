@@ -1,2 +1,11 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
+
+.p-service {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 83%;
+    margin: auto;
+    padding: 120px 0;
+}

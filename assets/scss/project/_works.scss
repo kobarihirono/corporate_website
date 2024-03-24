@@ -1,2 +1,12 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
+
+.p-works {
+    width: 78%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: end;
+    gap: 3rem;    
+    margin: auto;
+    padding: 120px 0;
+}

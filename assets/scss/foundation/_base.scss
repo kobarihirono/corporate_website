@@ -11,7 +11,6 @@ body {
     font-family: fs.$default-font-family;
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     color: cl.$c-mainFont;
 }
 
@@ -32,6 +31,10 @@ img {
 input {
     margin: 0;
     padding: 0;
+
+    &[type="radio"] {
+        all: revert;
+    }
 }
 
 textarea {
@@ -48,3 +51,4 @@ button {
     color: inherit;
     cursor: pointer;
 }
+

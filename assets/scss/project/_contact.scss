@@ -1,2 +1,75 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
+
+.p-contact {
+    width: 52%;
+    margin: auto;
+    padding: 120px 0;
+
+    .p-contact__text {
+        font-size: 15px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+    .p-contact__form {
+        background-color: cl.$c-bgContact;
+        padding: 80px;
+        margin-top: 36px;
+
+        .p-contact__form-list {
+
+            .p-contact__form-list-item {
+                display: flex;
+                flex-direction: column;
+
+                .p-contact__form-list-item-label {
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+
+                .p-contact__form-list-item-radio {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 16px;
+                    margin-top: 12px;
+                }
+
+                .p-contact__form-list-item-input {
+                    @include form(cl.$c-white, cl.$c-formFrame);
+                    width: 50%;
+                    margin-top: 12px;
+                }
+
+                .p-contact__form-list-item-textarea {
+                    @include form(cl.$c-white, cl.$c-formFrame);
+                    width: 100%;
+                    height: 200px;
+                    margin-top: 12px;
+                }
+            }
+
+            .p-contact__form-list-item:not(:first-child) {
+                margin-top: 24px
+            }
+        }
+
+        .p-contact__form-button {
+            @include button-center;
+            margin-top: 36px;
+        }
+    }
+}
+
+.required {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14.4px;
+    color: cl.$c-mainTitle;
+    padding-left: 8px;
+}
+
+.tell-about {
+    font-size: 12px;
+    line-height: 14.4px;
+}

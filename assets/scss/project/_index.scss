@@ -1,2 +1,171 @@
 @use "../foundation/color" as cl;
 @use "../foundation/mixin" as bp;
+
+.p-index-news {
+    width: 68%;
+    margin: auto;
+
+    .p-index-news__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 36px;
+        @include index-margin;
+    }
+
+    .p-index-news__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.p-index-service {
+    width: 88%;
+    margin: auto;
+
+    .p-index-service__title {
+        text-align: center;
+        @include index-margin;
+    }
+
+    .p-index-service__cards {
+        display: flex;
+        gap: 16px;
+        margin-top: 36px;
+    }
+
+    .p-index-service__button {
+        display: flex;
+        justify-content: center;
+        margin-top: 36px;
+        margin-bottom: 64px;
+    }
+}
+
+.p-index-works {
+    display: flex;
+    width: 100%;
+    margin-left: -5%;
+    margin-bottom: 32px;
+
+    .p-index-works__img {
+        width: 50%;
+        aspect-ratio: 750 / 540;
+        object-fit: cover;
+        padding-top: 5%;
+
+        img {
+            position: relative;
+            left: 20%;
+        }
+    }
+
+    .p-index-works__context {
+        background-color: cl.$c-gray;
+        width: 54%;
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        aspect-ratio: 780 / 660;
+        padding-left: 10%;
+    }
+}
+
+.p-index-company {
+    position: relative;
+    width: 88%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 8% 0;
+
+    .p-index-company__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        aspect-ratio: 1300 / 615.5;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .p-index-company__context {
+        position: relative;
+        text-align: center;
+        z-index: 2;
+
+        .p-index-company__context-header {
+            position: relative;
+            font-size: 40px;
+            font-weight: 700;
+            margin: 16px;
+
+            span {
+                position: relative;
+                display: inline-block;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 40px; // 必要に応じて調整
+                    left: 0;
+                    width: 100%;
+                    border-bottom: 10px solid cl.$c-underline;
+                    z-index: -1; // テキストの下に線を配置
+                }
+            }
+        }
+
+        .p-index-company__context-message {
+            margin-top: 16px;
+        }
+    }
+
+    .p-index-company__context-button {
+        @include button-center;
+    }
+}
+
+.p-index-recruit {
+    display: flex;
+    position: relative;
+    width: 77%;
+    margin: auto;
+    padding: 64px 0;
+    z-index: 10;
+
+    .p-index-recruit__context {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: cl.$c-gray;
+        width: 40%;
+        aspect-ratio: 444 / 346.8;
+        text-align: center;
+
+        .p-index-recruit__context-text {
+            margin-top: 16px;
+        }
+
+        .p-index-recruit__context-button {
+            @include button-center;
+        }
+    }
+
+    .p-index-recruit__img {
+        width: 60%;
+        object-fit: cover;
+        aspect-ratio: 666 / 346.8;
+
+        img {
+            height: 100%;
+        }
+    }
+}

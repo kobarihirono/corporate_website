@@ -2,27 +2,44 @@
 @use "../foundation/mixin" as bp;
 @use "../foundation/font" as fs;
 
-.l-header-sub {
+.l-header-sub-index {
     font-family: fs.$montserrat;
     text-align: center;
     margin-top: 15%;
 
-    .l-header-sub__main-title {
+    .l-header-sub-index__main-title {
         font-size: 72px;
         font-weight: bold;
         line-height: 72px;
     }
 
-    .l-header-sub__sub-title {
+    .l-header-sub-index__sub-title {
         font-size: 24px;
         font-weight: 400;
         line-height: 43.2px;
         margin-top: 20px;
     }
 
-    .l-header-sub__button {
+    .l-header-sub-index__button {
         display: flex;
         justify-content: center;
         margin-top: 5%;
+    }
+}
+
+.l-header-sub {
+    font-family: fs.$montserrat;
+    text-align: center;
+
+    .l-header-sub__main-title {
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 43.2px;
+    }
+
+    .l-header-sub__sub-title {
+        font-size: 13px;
+        line-height: 15.8px;
+        margin-top: 12px;
     }
 }
