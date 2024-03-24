@@ -43,3 +43,42 @@
         margin-top: 12px;
     }
 }
+
+@include mq(lg, max) {
+    .l-header-sub-index {
+
+        .l-header-sub-index__main-title {
+            font-size: 48px;
+            line-height: 56px;
+        }
+
+        .l-header-sub-index__sub-title {
+            font-size: 20px;
+        }
+    }
+}
+
+@include mq(sm, max) {
+    .l-header-sub-index {
+        text-align: left;
+        margin-left: 5%;
+        margin-top: 35%;
+
+        .l-header-sub-index__main-title {
+            width: 320px;
+            font-size: 40px;
+            line-height: 56px;
+        }
+
+        .l-header-sub-index__sub-title {
+            width: 150px;
+            font-size: 16px;
+            line-height: 28.8px;
+        }
+
+        .l-header-sub-index__button {
+            justify-content: flex-start;
+        }
+    }
+
+}

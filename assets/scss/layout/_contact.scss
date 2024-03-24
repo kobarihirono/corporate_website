@@ -18,3 +18,12 @@
         margin-top: 32px;
     }
 }
+
+@include mq(sm, max) {
+    .l-contact {
+        .l-contact__message {
+            font-size: 14px;
+            line-height: 25.2px;
+        }
+    }
+}

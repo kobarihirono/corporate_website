@@ -488,6 +488,11 @@ button {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1023px) {
+  .l-header .l-header__nav {
+    display: none;
+  }
+}
 .l-header-sub-index {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -525,6 +530,35 @@ button {
   margin-top: 12px;
 }
 
+@media screen and (max-width: 1023px) {
+  .l-header-sub-index .l-header-sub-index__main-title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .l-header-sub-index .l-header-sub-index__sub-title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .l-header-sub-index {
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 35%;
+  }
+  .l-header-sub-index .l-header-sub-index__main-title {
+    width: 320px;
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .l-header-sub-index .l-header-sub-index__sub-title {
+    width: 150px;
+    font-size: 16px;
+    line-height: 28.8px;
+  }
+  .l-header-sub-index .l-header-sub-index__button {
+    justify-content: flex-start;
+  }
+}
 .l-footer {
   font-family: "Montserrat", sans-serif;
   background-color: #120E19;
@@ -565,6 +599,12 @@ button {
   margin-top: 32px;
 }
 
+@media screen and (max-width: 639px) {
+  .l-contact .l-contact__message {
+    font-size: 14px;
+    line-height: 25.2px;
+  }
+}
 .l-header-bg-top {
   background-image: url("/assets/img/bg/bg_header.png");
   width: 100%;
@@ -579,6 +619,12 @@ button {
   height: 240px;
 }
 
+@media screen and (max-width: 639px) {
+  .l-additional-break::before {
+    content: "\a";
+    white-space: pre-line;
+  }
+}
 .c-mainButton {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
@@ -635,10 +681,17 @@ button {
   color: #391E88;
 }
 
+@media screen and (max-width: 1023px) {
+  .c-mainTitle {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
 .c-subTitle {
   font-size: 13px;
   line-height: 15.6px;
   color: #391E88;
+  margin-top: 8px;
 }
 
 .c-breadcrumb {
@@ -708,12 +761,27 @@ button {
   display: flex;
   gap: 16px;
 }
+.c-newsItem .c-newsItem__title {
+  display: flex;
+  gap: 32px;
+}
 .c-newsItem .c-newsItem__context {
   width: 72%;
   font-size: 14px;
   line-height: 25.2px;
 }
 
+@media screen and (max-width: 639px) {
+  .c-newsItem {
+    flex-direction: column;
+  }
+  .c-newsItem .c-newsItem__title {
+    gap: 16px;
+  }
+  .c-newsItem .c-newsItem__context {
+    width: 100%;
+  }
+}
 .c-pager {
   display: flex;
   justify-content: center;
@@ -759,7 +827,7 @@ button {
 }
 .c-serviceCard .c-serviceCard__title {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 21.6px;
   text-align: center;
   margin-top: 16px;
@@ -771,6 +839,16 @@ button {
   margin-top: 16px;
 }
 
+@media screen and (max-width: 639px) {
+  .c-serviceCard {
+    width: 100%;
+  }
+  .c-serviceCard .c-serviceCard__context {
+    width: 96%;
+    margin: auto;
+    padding-top: 16px;
+  }
+}
 .c-serviceContext {
   width: 100%;
   display: flex;
@@ -999,7 +1077,6 @@ button {
   display: flex;
   width: 100%;
   margin-left: -5%;
-  margin-bottom: 32px;
 }
 .p-index-works .p-index-works__img {
   width: 50%;
@@ -1015,6 +1092,8 @@ button {
 .p-index-works .p-index-works__context {
   background-color: #F7F7F7;
   width: 54%;
+  font-size: 15px;
+  line-height: 27px;
   display: flex;
   gap: 24px;
   flex-direction: column;
@@ -1031,20 +1110,10 @@ button {
   max-width: 1500px;
   margin: auto;
   padding: 8% 0;
-}
-.p-index-company .p-index-company__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  aspect-ratio: 1300/615.5;
-}
-.p-index-company .p-index-company__bg img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-image: url("/assets/img/bg/bg_company.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .p-index-company .p-index-company__context {
   position: relative;
@@ -1114,6 +1183,118 @@ button {
   height: 100%;
 }
 
+@media screen and (max-width: 1023px) {
+  .p-index-news .p-index-news__inner {
+    flex-direction: column;
+  }
+  .p-index-news .p-index-news__title {
+    text-align: center;
+  }
+  .p-index-works {
+    position: relative;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 40%;
+  }
+  .p-index-works .p-index-works__img {
+    position: absolute;
+    width: 85%;
+    left: 8%;
+    right: 8%;
+    bottom: 60%;
+    padding: 0;
+    margin: auto;
+  }
+  .p-index-works .p-index-works__img img {
+    width: 100%;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .p-index-works .p-index-works__context {
+    width: 100%;
+    max-height: 520px;
+    font-size: 14px;
+    line-height: 25.5px;
+    justify-content: flex-end;
+    padding: 0;
+    aspect-ratio: 375/400;
+    padding-bottom: 50px;
+  }
+  .p-index-company {
+    width: 100%;
+    background-image: url("/assets/img/bg/bg_circle_sp.png");
+    background-size: auto;
+  }
+  .p-index-company .p-index-company__context .p-index-company__context-header {
+    font-size: 36px;
+  }
+  .p-index-recruit {
+    flex-direction: column-reverse;
+  }
+  .p-index-recruit .p-index-recruit__context {
+    width: 100%;
+  }
+  .p-index-recruit .p-index-recruit__img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 639px) {
+  .p-index-news {
+    width: 92%;
+  }
+  .p-index-service {
+    width: 92%;
+  }
+  .p-index-service .p-index-service__cards {
+    flex-direction: column;
+  }
+  .p-index-company .p-index-company__context .p-index-company__context-title {
+    margin-bottom: 32px;
+  }
+  .p-index-company .p-index-company__context .p-index-company__context-header {
+    width: 290px;
+    font-size: 32px;
+    line-height: 48px;
+    margin: auto;
+  }
+  .p-index-company .p-index-company__context .p-index-company__context-header span {
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    background-image: linear-gradient(to bottom, transparent 60%, #F5F534 60%);
+    background-repeat: no-repeat;
+    background-size: 80% 25px;
+    background-position: 25px 100%;
+  }
+  .p-index-company .p-index-company__context .p-index-company__context-message {
+    font-size: 14px;
+    line-height: 25.2px;
+    margin-top: 24px;
+  }
+  .p-index-recruit .p-index-recruit__context .p-index-recruit__context-text {
+    font-size: 14px;
+    line-height: 25.2px;
+  }
+}
+@media screen and (max-width: 419px) {
+  .p-index-works .p-index-works__img {
+    bottom: 70%;
+  }
+  .p-index-works .p-index-works__context {
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 339px) {
+  .p-index-works {
+    margin-top: 70%;
+  }
+  .p-index-works .p-index-works__img {
+    bottom: 90%;
+  }
+  .p-index-works .p-index-works__context {
+    padding: 40px 0;
+  }
+}
 .p-recruit {
   background-image: url("/assets/img/bg/bg_recruit.png");
   padding: 120px 0;

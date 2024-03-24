@@ -46,7 +46,6 @@
     display: flex;
     width: 100%;
     margin-left: -5%;
-    margin-bottom: 32px;
 
     .p-index-works__img {
         width: 50%;
@@ -63,6 +62,8 @@
     .p-index-works__context {
         background-color: cl.$c-gray;
         width: 54%;
+        font-size: 15px;
+        line-height: 27px;
         display: flex;
         gap: 24px;
         flex-direction: column;
@@ -80,21 +81,10 @@
     max-width: 1500px;
     margin: auto;
     padding: 8% 0;
-
-    .p-index-company__bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        aspect-ratio: 1300 / 615.5;
-
-        img {
-            width: 100%;
-            object-fit: cover;
-        }
-    }
+    background-image: url("/assets/img/bg/bg_company.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 
     .p-index-company__context {
         position: relative;
@@ -114,7 +104,7 @@
                 &::after {
                     content: '';
                     position: absolute;
-                    top: 40px; // 必要に応じて調整
+                    top: 40px;
                     left: 0;
                     width: 100%;
                     border-bottom: 10px solid cl.$c-underline;
@@ -166,6 +156,159 @@
 
         img {
             height: 100%;
+        }
+    }
+}
+
+@include mq(lg, max) {
+    .p-index-news {
+
+        .p-index-news__inner {
+            flex-direction: column;
+        }
+
+        .p-index-news__title {
+            text-align: center;
+        }
+    }
+
+    .p-index-works {
+        position: relative;
+        flex-direction: column;
+        margin-left: 0;
+        margin-top: 40%;
+
+        .p-index-works__img {
+            position: absolute;
+            width: 85%;
+            left: 8%;
+            right: 8%;
+            bottom: 60%;
+            padding: 0;
+            margin: auto;
+
+            img {
+                width: 100%;
+                left: 0;
+                object-fit: cover;
+            }
+        }
+
+        .p-index-works__context {
+            width: 100%;
+            max-height: 520px;
+            font-size: 14px;
+            line-height: 25.5px;
+            justify-content: flex-end;
+            padding: 0;
+            aspect-ratio: 375 / 400;
+            padding-bottom: 50px;       
+        }
+    }
+
+    .p-index-company {
+        width: 100%;
+        background-image: url("/assets/img/bg/bg_circle_sp.png");
+        background-size: auto;
+
+        .p-index-company__context {
+            .p-index-company__context-header {
+                font-size: 36px;
+            }
+        }
+    }
+
+    .p-index-recruit {
+        flex-direction: column-reverse;
+
+        .p-index-recruit__context {
+            width: 100%;
+        }
+
+        .p-index-recruit__img {
+            width: 100%;
+        }
+    }
+}
+
+@include mq(sm, max) {
+    .p-index-news {
+        width: 92%;
+    }
+
+    .p-index-service {
+        width: 92%;
+
+        .p-index-service__cards {
+            flex-direction: column;
+        }
+    }
+
+    .p-index-company {
+        .p-index-company__context {
+
+            .p-index-company__context-title {
+                margin-bottom: 32px;
+            }
+
+            .p-index-company__context-header {
+                width: 290px;
+                font-size: 32px;
+                line-height: 48px;
+                margin: auto;
+
+                span { // 2行目にもアンダーラインを付加
+                    box-decoration-break: clone;
+                    -webkit-box-decoration-break: clone;
+                    background-image: linear-gradient(to bottom, transparent 60%, cl.$c-underline 60%);
+                    background-repeat: no-repeat;
+                    background-size: 80% 25px;
+                    background-position: 25px 100%;
+                }
+            }
+
+            .p-index-company__context-message {
+                font-size: 14px;
+                line-height: 25.2px;
+                margin-top: 24px;
+            }
+        }
+    }
+
+    .p-index-recruit {
+        .p-index-recruit__context {
+            .p-index-recruit__context-text {
+                font-size: 14px;
+                line-height: 25.2px;
+            }
+        }
+    }
+}
+
+// WORKSのみ細かく調整
+@include mq(ls, max) {
+    .p-index-works {
+
+        .p-index-works__img {
+            bottom: 70%;
+        }
+
+        .p-index-works__context {
+            padding: 30px 0;
+        }
+    }
+}
+
+@include mq(xs, max) {
+    .p-index-works {
+        margin-top: 70%;
+
+        .p-index-works__img {
+            bottom: 90%;
+        }
+
+        .p-index-works__context {
+            padding: 40px 0;
         }
     }
 }

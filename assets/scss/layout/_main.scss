@@ -14,3 +14,11 @@
 .l-header-bg {
     height: 240px;
 }
+
+
+@include mq(sm, max) {
+    .l-additional-break::before {
+        content: "\A";
+        white-space: pre-line;
+    }
+}
