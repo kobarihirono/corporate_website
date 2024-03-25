@@ -56,6 +56,12 @@
             font-size: 20px;
         }
     }
+
+    .l-header-sub {
+        .l-header-sub__main-title {
+            font-size: 30px;
+        }
+    }
 }
 
 @include mq(sm, max) {

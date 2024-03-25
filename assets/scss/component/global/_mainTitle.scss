@@ -3,6 +3,7 @@
 @use "../../foundation/font" as fs;
 
 .c-mainTitle {
+    font-family: fs.$montserrat;
     font-size: 36px;
     line-height: 43.2px;
     font-weight: bold;

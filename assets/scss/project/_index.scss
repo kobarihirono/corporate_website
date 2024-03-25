@@ -286,7 +286,7 @@
 }
 
 // WORKSのみ細かく調整
-@include mq(ls, max) {
+@include mq(xs, max) {
     .p-index-works {
 
         .p-index-works__img {
@@ -299,7 +299,7 @@
     }
 }
 
-@include mq(xs, max) {
+@include mq(xxs, max) {
     .p-index-works {
         margin-top: 70%;
 

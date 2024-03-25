@@ -16,6 +16,11 @@
             justify-content: center;
             gap: 20px;
 
+            .l-footer__nav-list-group {
+                display: flex;
+                gap: 20px;
+            }
+
             .l-footer__nav-list-item {
                 font-size: 12px;
             }
@@ -27,5 +32,18 @@
         color: cl.$c-purpleFont;
         text-align: center;
         margin-top: 28px;
+    }
+}
+
+@include mq(lg, max) {
+    .l-footer {
+
+        .l-footer__nav {
+            
+            .l-footer__nav-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     }
 }
