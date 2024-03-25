@@ -1,5 +1,7 @@
-// ブレイクポイント（min-width）
+// ブレイクポイント
 $mq-breakpoints: (
+    'xs': 340px,
+    'ls': 420px,
     'sm': 640px,
     'md': 768px,
     'lg': 1024px,

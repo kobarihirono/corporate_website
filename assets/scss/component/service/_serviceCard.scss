@@ -22,7 +22,7 @@
 
     .c-serviceCard__title {
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 21.6px;
         text-align: center;
         margin-top: 16px;
@@ -33,5 +33,17 @@
         font-weight: 400;
         line-height: 21.6px;
         margin-top: 16px;
+    }
+}
+
+@include mq(sm, max) {
+    .c-serviceCard {
+        width: 100%;
+
+        .c-serviceCard__context {
+            width: 96%;
+            margin: auto;
+            padding-top: 16px;
+        }
     }
 }

@@ -20,3 +20,12 @@
         }
     }
 }
+
+@include mq(lg, max) {
+    .l-header {
+        
+        .l-header__nav {
+            display: none;
+        }
+    }
+}

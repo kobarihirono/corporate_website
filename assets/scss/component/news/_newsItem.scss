@@ -5,9 +5,28 @@
     display: flex;
     gap: 16px;
 
+    .c-newsItem__title {
+        display: flex;
+        gap: 32px;
+    }
+
     .c-newsItem__context {
         width: 72%;
         font-size: 14px;
         line-height: 25.2px;
+    }
+}
+
+@include mq(sm, max) {
+    .c-newsItem {
+        flex-direction: column;
+
+        .c-newsItem__title {
+            gap: 16px;
+        }
+
+        .c-newsItem__context {
+            width: 100%;
+        }
     }
 }

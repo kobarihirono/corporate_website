@@ -8,3 +8,10 @@
     font-weight: bold;
     color: cl.$c-mainTitle;
 }
+
+@include mq(lg, max) {
+    .c-mainTitle {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
