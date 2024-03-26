@@ -38,3 +38,40 @@
         }
     }
 }
+
+@include mq(lg, max) {
+    .c-serviceContext {
+        flex-direction: column;
+
+        .c-serviceContext__img {
+            width: 100%;
+        }
+
+        .c-serviceContext__textarea {
+            width: 100%;
+
+            .c-serviceContext__textarea-title {
+                text-align: center;
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+@include mq(sm, max) {
+    .c-serviceContext {
+
+        .c-serviceContext__textarea {
+
+            .c-serviceContext__textarea-title {
+                font-size: 18px;
+                line-height: 21.6px;
+            }
+
+            .c-serviceContext__textarea-text {
+                font-size: 14px;
+                line-height: 25.2px;
+            }
+        }
+    }
+}
