@@ -99,6 +99,12 @@
 @include mq(lg, max) {
     .p-news-show {
         width: 92%;
+
+        .p-news-show__responsive-image {
+            background-image: url('/assets/img/icon/sns-btn_sp.png');
+            width: 328px;
+            height: 68;
+        }
     }
 }
 
