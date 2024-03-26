@@ -1,0 +1,74 @@
+@use "../foundation/color" as cl;
+@use "../foundation/mixin" as bp;
+@use "../foundation/font" as fs;
+
+.l-hamburger {
+    position: relative;
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+
+    .l-hamburger__bar {
+        display: flex;
+        width: 30px;
+        height: 2px;
+        margin: 5px auto;
+        background-color: cl.$c-white;
+        transition: all 0.5s ease;
+    }
+}
+
+.js-ham-active {
+    .l-hamburger__bar {
+        &:nth-child(1) {
+            transform: translateY(7px) rotate(-45deg);
+        }
+
+        &:nth-child(2) {
+            opacity: 0;
+        }
+
+        &:nth-child(3) {
+            transform: translateY(-7px) rotate(-135deg);
+        }
+    }
+}
+
+.l-hamburger-nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, cl.$c-mainButton-light, cl.$c-mainButton-dark);
+    transition: transform 0.7s ease;
+    z-index: 999;
+
+    .l-hamburger-nav__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-family: fs.$montserrat;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.js-ham-nav-active {
+    transform: translateX(0);
+}
+
+@include bp.mq(lg, max) {
+    .l-hamburger {
+        display: block;
+    }
+
+    .l-hamburger-nav {
+        display: flex;
+    }
+}

@@ -1,37 +1,7 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https: //fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 *,
 ::before,
 ::after {
@@ -489,8 +459,73 @@ button {
 }
 
 @media screen and (max-width: 1023px) {
+  .l-header .l-header__logo {
+    width: 120px;
+    height: 13px;
+  }
   .l-header .l-header__nav {
     display: none;
+  }
+}
+.l-hamburger {
+  position: relative;
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+.l-hamburger .l-hamburger__bar {
+  display: flex;
+  width: 30px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #FFFFFF;
+  transition: all 0.5s ease;
+}
+
+.js-ham-active .l-hamburger__bar:nth-child(1) {
+  transform: translateY(7px) rotate(-45deg);
+}
+.js-ham-active .l-hamburger__bar:nth-child(2) {
+  opacity: 0;
+}
+.js-ham-active .l-hamburger__bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-135deg);
+}
+
+.l-hamburger-nav {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #7633A4, #250D65);
+  transition: transform 0.7s ease;
+  z-index: 999;
+}
+.l-hamburger-nav .l-hamburger-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.js-ham-nav-active {
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 1023px) {
+  .l-hamburger {
+    display: block;
+  }
+  .l-hamburger-nav {
+    display: flex;
   }
 }
 .l-header-sub-index {
@@ -538,6 +573,9 @@ button {
   .l-header-sub-index .l-header-sub-index__sub-title {
     font-size: 20px;
   }
+  .l-header-sub .l-header-sub__main-title {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 639px) {
   .l-header-sub-index {
@@ -573,6 +611,10 @@ button {
   justify-content: center;
   gap: 20px;
 }
+.l-footer .l-footer__nav .l-footer__nav-list .l-footer__nav-list-group {
+  display: flex;
+  gap: 20px;
+}
 .l-footer .l-footer__nav .l-footer__nav-list .l-footer__nav-list-item {
   font-size: 12px;
 }
@@ -583,6 +625,12 @@ button {
   margin-top: 28px;
 }
 
+@media screen and (max-width: 1023px) {
+  .l-footer .l-footer__nav .l-footer__nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .l-contact {
   background-color: #F7F7F7;
   text-align: center;
@@ -675,6 +723,7 @@ button {
 }
 
 .c-mainTitle {
+  font-family: "Montserrat", sans-serif;
   font-size: 36px;
   line-height: 43.2px;
   font-weight: bold;
@@ -1431,7 +1480,7 @@ button {
 }
 .p-news-index .p-news-index__pagers {
   justify-content: center;
-  margin-top: 36px;
+  margin-top: 40px;
   margin-bottom: 80px;
 }
 

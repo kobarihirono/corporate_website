@@ -23,6 +23,11 @@
 
 @include mq(lg, max) {
     .l-header {
+
+        .l-header__logo {
+            width: 120px;
+            height: 13px;
+        }
         
         .l-header__nav {
             display: none;
