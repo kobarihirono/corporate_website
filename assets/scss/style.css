@@ -876,6 +876,7 @@ button {
   position: fixed;
   top: 90%;
   left: 95%;
+  z-index: 1499;
 }
 
 @keyframes footer-arrowMove-before {
@@ -1429,7 +1430,6 @@ button {
   width: 77%;
   margin: auto;
   padding: 64px 0;
-  z-index: -5;
 }
 .p-index-recruit .p-index-recruit__context {
   display: flex;
