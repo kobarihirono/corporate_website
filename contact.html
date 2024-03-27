@@ -21,30 +21,54 @@
   </head>
   <body>
     <div class="l-header-bg-top l-header-bg">
-      <header class="l-header">
-        <figure class="l-header__logo">
+      <header id="js-header" class="l-header">
+        <a href="/" class="l-header__logo">
           <img src="/assets/img/logo/logo.png" />
-        </figure>
+        </a>
         <nav class="l-header__nav">
           <ul class="l-header__nav-list">
-            <li class="l-header__nav-list-item"><a href="news/index.html">NEWS</a></li>
-            <li class="l-header__nav-list-item"><a href="service.html">SERVICE</a></li>
-            <li class="l-header__nav-list-item"><a href="works.html">WORKS</a></li>
-            <li class="l-header__nav-list-item"><a href="company.html">COMPANY</a></li>
-            <li class="l-header__nav-list-item"><a href="recruit.html">RECRUIT</a></li>
-            <li class="l-header__nav-list-item"><a href="contact.html">CONTACT</a></li>
+            <li class="l-header__nav-list-item">
+              <a href="news/index.html">NEWS</a>
+            </li>
+            <li class="l-header__nav-list-item">
+              <a href="service.html">SERVICE</a>
+            </li>
+            <li class="l-header__nav-list-item">
+              <a href="works.html">WORKS</a>
+            </li>
+            <li class="l-header__nav-list-item">
+              <a href="company.html">COMPANY</a>
+            </li>
+            <li class="l-header__nav-list-item">
+              <a href="recruit.html">RECRUIT</a>
+            </li>
+            <li class="l-header__nav-list-item">
+              <a href="contact.html">CONTACT</a>
+            </li>
           </ul>
         </nav>
 
         <!-- ハンバーガーメニュー -->
         <nav id="js-hamburger-nav" class="l-hamburger-nav">
           <ul class="l-hamburger-nav__list">
-            <li class="l-hamburger-nav__list-item"><a href="news/index.html">NEWS</a></li>
-            <li class="l-hamburger-nav__list-item"><a href="service.html">SERVICE</a></li>
-            <li class="l-hamburger-nav__list-item"><a href="works.html">WORKS</a></li>
-            <li class="l-hamburger-nav__list-item"><a href="company.html">COMPANY</a></li>
-            <li class="l-hamburger-nav__list-item"><a href="recruit.html">RECRUIT</a></li>
-            <li class="l-hamburger-nav__list-item"><a href="contact.html">CONTACT</a></li>
+            <li class="l-hamburger-nav__list-item">
+              <a href="news/index.html">NEWS</a>
+            </li>
+            <li class="l-hamburger-nav__list-item">
+              <a href="service.html">SERVICE</a>
+            </li>
+            <li class="l-hamburger-nav__list-item">
+              <a href="works.html">WORKS</a>
+            </li>
+            <li class="l-hamburger-nav__list-item">
+              <a href="company.html">COMPANY</a>
+            </li>
+            <li class="l-hamburger-nav__list-item">
+              <a href="recruit.html">RECRUIT</a>
+            </li>
+            <li class="l-hamburger-nav__list-item">
+              <a href="contact.html">CONTACT</a>
+            </li>
           </ul>
         </nav>
         <div id="js-hamburger" class="l-hamburger">
@@ -76,7 +100,10 @@
 
       <div class="p-contact">
         <p class="p-contact__text">
-          Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。
+          Webサイトの制作のご依頼やお見積りなど、<span
+              class="l-additional-break"
+            ></span
+            >お気軽にご相談ください。
         </p>
 
         <form class="p-contact__form" action="" method="post">
@@ -266,8 +293,13 @@
         </ul>
       </nav>
       <p class="l-footer__copy">&copy; PON DESIGN</p>
+      <a href="#" id="js-circleArrow__wrap" class="c-circleArrow__wrap">
+        <div class="c-circleArrow"></div>
+      </a>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/assets/js/hamburger.js"></script>
+    <script src="/assets/js/scrollSmooth.js"></script>
+    <script src="/assets/js/scrollHeader.js"></script>
   </body>
 </html>

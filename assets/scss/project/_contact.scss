@@ -73,3 +73,38 @@
     font-size: 12px;
     line-height: 14.4px;
 }
+
+@include mq(lg, max) {
+    .p-contact {
+        width: 92%;
+        padding: 50px 0;
+
+        .p-contact__text {
+            font-size: 14px;
+        }
+
+        .p-contact__form {
+            padding: 30px;
+
+            .p-contact__form-list {
+                .p-contact__form-list-item {
+                    .p-contact__form-list-item-radio {
+                        flex-direction: column;
+
+                        label {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .p-contact__form-list-item-input {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .p-contact__form-button {
+                margin-top: 50px;
+            }
+        }
+    }
+}

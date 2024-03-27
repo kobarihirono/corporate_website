@@ -122,3 +122,72 @@
         }
     }
 }
+
+@include mq(lg, max) {
+    .p-recruit {
+        .p-recruit__title {
+
+            .p-recruit__title-main {
+                font-size: 48px;
+                line-height: 57.8px;
+            }
+
+            .p-recruit__title-sub {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@include mq(sm, max) {
+    .p-recruit {
+        padding: 50px 0;
+
+        .p-recruit__title {
+
+            .p-recruit__title-sub {
+                font-size: 18px;
+                line-height: 32.4px;
+            }
+
+            .p-recruit__title-text {
+                font-size: 15px;
+                line-height: 27px;
+            }
+        }
+
+        .p-recruit__context {
+
+            .p-recruit__context-inner {
+                padding: 16px;
+            }
+
+            .p-recruit__context-title {
+                margin-top: 16px;
+            }
+
+            .p-recruit__context-list {
+
+                .p-recruit__context-list-item {
+                    flex-direction: column;
+                    gap: 12px;
+
+                    .p-recruit__context-list-item-title {
+                        font-weight: bold;
+                        width: 100%;
+                    }
+
+                    .p-recruit__context-list-item-text {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .p-recruit__video {
+            .p-recruit__video-img {
+                aspect-ratio: 345 / 194;
+            }
+        }
+    }
+}

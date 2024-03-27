@@ -9,3 +9,9 @@
     margin: auto;
     padding: 120px 0;
 }
+
+@include mq(lg, max) {
+    .p-service {
+        width: 92%;
+    }
+}

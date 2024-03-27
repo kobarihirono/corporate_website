@@ -8,3 +8,9 @@
     line-height: 25.2px;
     color: cl.$c-black;
 }
+
+@include mq(sm, max) {
+    .c-time {
+        font-size: 12px;
+    }
+}

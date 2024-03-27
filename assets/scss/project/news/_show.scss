@@ -12,6 +12,7 @@
     }
 
     .p-news-show__news-time {
+        flex-direction: row;
         margin-top: 14px;
     }
 
@@ -91,6 +92,56 @@
             display: block;
             text-align: center;
             margin-top: 24px;
+        }
+    }
+}
+
+@include mq(lg, max) {
+    .p-news-show {
+        width: 92%;
+
+        .p-news-show__responsive-image {
+            background-image: url('/assets/img/icon/sns-btn_sp.png');
+            width: 328px;
+            height: 68;
+        }
+    }
+}
+
+@include mq(sm, max) {
+    .p-news-show {
+
+        .p-news-show__title {
+            font-size: 22px;
+            line-height: 33px;
+        }
+
+        .p-news-show__context {
+            font-size: 15px;
+            line-height: 27px;
+
+            .p-news-show__context-main-title {
+                font-size: 18px;
+                line-height: 28.8px;
+            }
+
+            .p-news-show__context-sub-title {
+                font-size: 17px;
+                line-height: 30.6px;
+            }
+        }
+
+        .p-news-show__pagers {
+
+            .p-news-show__pagers-item {
+                font-size: 12px;
+                line-height: 26.6px;
+                padding: 14px;
+            }
+
+            .p-news-show__pagers-all {
+                font-size: 14px;
+            }
         }
     }
 }

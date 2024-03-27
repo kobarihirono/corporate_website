@@ -6,23 +6,50 @@
     font-family: fs.$montserrat;
     display: flex;
     justify-content: space-between;
-    padding: 28px;
+    position: fixed;
+    width: 100%;
+    height: 64px;
+    padding: 20px 36px;
+    z-index: 1500;
+
+    // 時間をかけてアニメーションさせたいので、擬似要素で背景色を指定
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: cl.$c-mainButton-dark;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.3s ease;
+    }
 
     .l-header__nav {
         font-size: 14px;
         line-height: 25.6px;
+        font-weight: bold;
 
         .l-header__nav-list {
             display: flex;
             justify-content: space-between;
             gap: 20px;
             cursor: pointer;
+
+            .l-header__nav-list-item {
+                a {
+                    position: relative;
+                    @include hover-underline(cl.$c-white);
+                }
+            }
         }
     }
 }
 
 @include mq(lg, max) {
     .l-header {
+        padding: 20px 24px;
 
         .l-header__logo {
             width: 120px;
@@ -33,4 +60,8 @@
             display: none;
         }
     }
+}
+
+.js-header-bg:before {
+    opacity: 1;
 }

@@ -1,3 +1,112 @@
 @use "../../foundation/color" as cl;
 @use "../../foundation/mixin" as bp;
 @use "../../foundation/font" as fs;
+
+.c-circleArrow {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    left: -50%;
+    bottom: 50px;
+    border: 1px solid cl.$c-mainFont;
+    border-radius: 50%;
+    background-color: cl.$c-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1499;
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 37%;
+        width: 15px;
+        height: 2px;
+        background-color: cl.$c-mainFont;
+        transform: rotate(90deg);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 38%;
+        right: 42%;
+        width: 9px;
+        height: 9px;
+        border-top: 2px solid cl.$c-mainFont;
+        border-right: 2px solid cl.$c-mainFont;
+        transform: rotate(315deg);
+    }
+
+    &:hover::before {
+        animation: footer-arrowMove-before 0.4s ease-in-out forwards;
+    }
+
+    &:hover::after {
+        animation: footer-arrowMove-after 0.4s ease-in-out forwards;
+    }
+}
+
+.c-circleArrow__wrap {
+    position: fixed;
+    top: 90%;
+    left: 95%;
+}
+
+@keyframes footer-arrowMove-before {
+    0% {
+        top: 50%;
+        opacity: 1;
+    }
+
+    25% {
+        top: 10%;
+        opacity: 0;
+    }
+
+    75% {
+        top: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes footer-arrowMove-after {
+    0% {
+        top: 38%;
+        opacity: 1;
+    }
+
+    25% {
+        top: 5%;
+        opacity: 0;
+    }
+
+    75% {
+        top: 90%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 38%;
+        opacity: 1;
+    }
+}
+
+@include bp.mq ('md', 'max') {
+    .c-circleArrow {
+        left: -80%;
+        bottom: 45px;
+    }
+}
+
+@include bp.mq ('sm', 'max') {
+    .c-circleArrow {
+        left: -90%;
+        bottom: 40px;
+    }
+}

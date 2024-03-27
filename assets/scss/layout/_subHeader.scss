@@ -5,7 +5,7 @@
 .l-header-sub-index {
     font-family: fs.$montserrat;
     text-align: center;
-    margin-top: 15%;
+    padding-top: 30%;
 
     .l-header-sub-index__main-title {
         font-size: 72px;
@@ -30,6 +30,7 @@
 .l-header-sub {
     font-family: fs.$montserrat;
     text-align: center;
+    padding-top: 100px;
 
     .l-header-sub__main-title {
         font-size: 36px;
@@ -68,7 +69,7 @@
     .l-header-sub-index {
         text-align: left;
         margin-left: 5%;
-        margin-top: 35%;
+        padding-top: 50%;
 
         .l-header-sub-index__main-title {
             width: 320px;

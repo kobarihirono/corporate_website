@@ -71,9 +71,53 @@
         }
 
         .p-company__overview-map-link {
+            display: block;
             font-size: 14px;
             line-height: 25.2px;
             color: cl.$c-purpleFont-dark;
+            margin-top: 12px;
+        }
+    }
+}
+
+@include mq(lg, max) {
+    .p-company {
+        width: 92%;
+
+        .p-company__represent {
+            flex-direction: column;
+            margin-top: 0;
+
+            .p-company__represent-img {
+                width: 100%;
+            }
+
+            .p-company__represent-message {
+                font-size: 14px;
+                line-height: 25.2px;
+                width: 100%;
+                padding: 5px;
+                margin-top: 18px;
+
+                .p-company__represent-message-item:not(:first-of-type) {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .p-company__overview {
+            .p-company__overview-list {
+
+                .p-company__overview-list-item {
+                    font-size: 15px;
+                    padding: 24px;
+                }
+            }
+
+            .p-company__overview-img {
+                aspect-ratio: 345 / 240;
+                margin-top: 40px;
+            }
         }
     }
 }
