@@ -876,6 +876,7 @@ button {
   position: fixed;
   top: 90%;
   left: 95%;
+  z-index: 1499;
 }
 
 @keyframes footer-arrowMove-before {
@@ -1429,7 +1430,6 @@ button {
   width: 77%;
   margin: auto;
   padding: 64px 0;
-  z-index: -5;
 }
 .p-index-recruit .p-index-recruit__context {
   display: flex;
@@ -1469,7 +1469,7 @@ button {
     position: relative;
     flex-direction: column;
     margin-left: 0;
-    margin-top: 40%;
+    margin-top: 45%;
   }
   .p-index-works .p-index-works__img {
     position: absolute;
@@ -1683,6 +1683,12 @@ button {
   .p-recruit .p-recruit__title .p-recruit__title-sub {
     font-size: 28px;
   }
+  .p-recruit .p-recruit__context {
+    width: 92%;
+  }
+  .p-recruit .p-recruit__video {
+    width: 92%;
+  }
 }
 @media screen and (max-width: 640px) {
   .p-recruit {
@@ -1715,6 +1721,20 @@ button {
   }
   .p-recruit .p-recruit__video .p-recruit__video-img {
     aspect-ratio: 345/194;
+  }
+}
+@media screen and (max-width: 420px) {
+  .p-recruit .p-recruit__title .p-recruit__title-main {
+    font-size: 40px;
+    line-height: 50.2px;
+  }
+  .p-recruit .p-recruit__title .p-recruit__title-sub {
+    font-size: 16px;
+    line-height: 28.8px;
+  }
+  .p-recruit .p-recruit__title .p-recruit__title-text {
+    font-size: 12px;
+    line-height: 21.6px;
   }
 }
 .p-service {

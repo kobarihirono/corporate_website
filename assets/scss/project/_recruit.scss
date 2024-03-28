@@ -136,6 +136,14 @@
                 font-size: 28px;
             }
         }
+
+        .p-recruit__context {
+            width: 92%;
+        }
+
+        .p-recruit__video {
+            width: 92%;
+        }
     }
 }
 
@@ -185,8 +193,30 @@
         }
 
         .p-recruit__video {
+
             .p-recruit__video-img {
                 aspect-ratio: 345 / 194;
+            }
+        }
+    }
+}
+
+@include mq(xs, max) {
+    .p-recruit {
+        .p-recruit__title {     
+            .p-recruit__title-main {
+                font-size: 40px;
+                line-height: 50.2px;
+            }
+
+            .p-recruit__title-sub {
+                font-size: 16px;
+                line-height: 28.8px;
+            }
+
+            .p-recruit__title-text {
+                font-size: 12px;
+                line-height: 21.6px;
             }
         }
     }
