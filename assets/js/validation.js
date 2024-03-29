@@ -54,7 +54,7 @@ $(document).ready(function () {
     },
     messages: {
       inquiry_type: {
-        required: "お問い合わせの種別を選択してください",
+        required: "お問い合わせ種別を選択してください",
       },
       user_name: {
         required: "ご担当者名を入力してください",

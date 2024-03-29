@@ -781,6 +781,10 @@ button {
   flex: 1;
   text-align: center;
 }
+.c-mainButton button {
+  flex: 1;
+  text-align: center;
+}
 .c-mainButton img {
   margin-left: auto;
 }
