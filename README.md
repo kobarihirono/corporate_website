@@ -19,6 +19,9 @@
 - **エディタ**
   - VisualStudio Code
 
+- **テスト**
+  - MAMP
+
 - **ホスティング**
   - Vercel
 
@@ -56,7 +59,6 @@ scss/
 
 - **手動テスト**:
   - 互換性テスト
-  - 回帰テスト
   - ユーザビリティテスト
 
 ### テスト仕様書
@@ -65,5 +67,4 @@ https://docs.google.com/spreadsheets/d/1-rC1CIOfi-JMN4pbmEX_XtGb2eCKODXAGwYYoZj_
 
 ## 参考
 
-このコーポレートサイトは以下サイトよりデザインを引用しております。
-https://webdesigner-go.com/coding-practice/advanced/
+- **デザイン**:https://webdesigner-go.com/coding-practice/

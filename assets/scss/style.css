@@ -1269,7 +1269,8 @@ button {
 .p-contact {
   width: 52%;
   margin: auto;
-  padding: 120px 0;
+  padding-top: 50px;
+  padding-bottom: 120px;
 }
 .p-contact .p-contact__text {
   font-size: 15px;
