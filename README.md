@@ -19,9 +19,10 @@
 - **エディタ**
   - VisualStudio Code
 
-## SCSS ファイル構成
+- **ホスティング**
+  - Vercel
 
-スタイル管理を効率化するため、以下のような SCSS ファイル構成を採用しています
+## SCSS ファイル構成
 
 ```plaintext
 scss/
@@ -54,9 +55,12 @@ scss/
 ## テスト
 
 - **手動テスト**:
-  - 他端末テスト
+  - 互換性テスト
+  - 回帰テスト
+  - ユーザビリティテスト
 
 ### テスト仕様書
+
 https://docs.google.com/spreadsheets/d/1-rC1CIOfi-JMN4pbmEX_XtGb2eCKODXAGwYYoZj_-JI/edit?usp=sharing
 
 ## 参考
