@@ -101,12 +101,12 @@
       <div class="p-contact">
         <p class="p-contact__text">
           Webサイトの制作のご依頼やお見積りなど、<span
-              class="l-additional-break"
-            ></span
-            >お気軽にご相談ください。
+            class="l-additional-break"
+          ></span
+          >お気軽にご相談ください。
         </p>
 
-        <form class="p-contact__form" action="" method="post">
+        <form id="form" class="p-contact__form" action="" method="post">
           <fieldset>
             <ul class="p-contact__form-list">
               <li class="p-contact__form-list-item">
@@ -154,7 +154,7 @@
                 <!-- .p-contact__form-list-item-radio -->
               </li>
               <li class="p-contact__form-list-item">
-                <label class="p-contact__form-list-item-label" for="name"
+                <label class="p-contact__form-list-item-label"
                   >お名前<span class="required">*必須</span></label
                 >
                 <input
@@ -165,7 +165,7 @@
                 />
               </li>
               <li class="p-contact__form-list-item">
-                <label class="p-contact__form-list-item-label" for="company"
+                <label class="p-contact__form-list-item-label"
                   >会社名<span class="required">*必須</span></label
                 >
                 <input
@@ -176,7 +176,7 @@
                 />
               </li>
               <li class="p-contact__form-list-item">
-                <label class="p-contact__form-list-item-label" for="mail"
+                <label class="p-contact__form-list-item-label"
                   >メールアドレス<span class="required">*必須</span></label
                 >
                 <input
@@ -187,7 +187,7 @@
                 />
               </li>
               <li class="p-contact__form-list-item">
-                <label class="p-contact__form-list-item-label" for="tel"
+                <label class="p-contact__form-list-item-label"
                   >電話番号<span class="tell-about"
                     >（半角数字ハイフンなし）</span
                   ></label
@@ -200,7 +200,7 @@
                 />
               </li>
               <li class="p-contact__form-list-item">
-                <label class="p-contact__form-list-item-label" for="msg"
+                <label class="p-contact__form-list-item-label"
                   >お問い合わせ内容</label
                 >
                 <textarea
@@ -211,26 +211,27 @@
                 ></textarea>
               </li>
               <li class="p-contact__form-list-item">
-                <label class="p-contact__form-list-item-label" for="know"
+                <label
+                  class="p-contact__form-list-item-label"
                   >PON DESIGNをどちらでお知りになりましたか？<span
                     class="required"
                     >*必須</span
                   ></label
                 >
-                <select class="p-contact__form-list-item-input" name="" id="">
+                <select class="p-contact__form-list-item-input" name="source" id="source">
                   <option value="">選択してください</option>
-                  <option value="">Google/Yahoo検索</option>
-                  <option value="">SNS</option>
-                  <option value="">ブログ</option>
-                  <option value="">友人や知人</option>
-                  <option value="">その他</option>
+                  <option value="Google/Yahoo検索">Google/Yahoo検索</option>
+                  <option value="SNS">SNS</option>
+                  <option value="ブログ">ブログ</option>
+                  <option value="友人や知人">友人や知人</option>
+                  <option value="その他">その他</option>
                 </select>
               </li>
             </ul>
 
             <div class="p-contact__form-button">
               <div class="c-mainButton">
-                <a href="contact.html">送信する</a>
+                <button type="submit" href="contact.html">送信する</button>
                 <img src="/assets/img/logo/caret-right_14px.png" />
               </div>
               <!-- .c-mainButton -->
@@ -298,6 +299,8 @@
       </a>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="/assets/js/validation.js"></script>
     <script src="/assets/js/hamburger.js"></script>
     <script src="/assets/js/scrollSmooth.js"></script>
     <script src="/assets/js/scrollHeader.js"></script>
