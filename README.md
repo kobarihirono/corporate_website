@@ -2,75 +2,40 @@
 
 架空のコーポレートサイト制作
 
-## 技術スタック
+## PON DESIGN
 
-このプロジェクトでは以下の技術を使用しています:
+## 使用技術
 
-- **HTML**: 構造の定義
-- **SCSS**: スタイリング
-- **JavaScript**: インタラクティビティ
-- **jQuery**: フロントバリデーションなどのプラグインの活用
-- **PHP**: 共通部品の読み込み
+このプロジェクトでは以下の技術を使用しています
 
-### 前提条件
+- **使用言語**
+  - HTML
+  - SCSS
+  - jQuery
 
-プロジェクトを開始する前に、以下のツールがインストールされていることを確認してください
+- **デザインツール**
+  - figma
 
-- VisualStudio Code
-- Live Sass Compiler
-- PHP
-- MAMP
+- **エディタ**
+  - VisualStudio Code
 
-## 命名規則
+- **テスト**
+  - MAMP
 
-プロジェクト内での一貫性を保つため、以下の命名規則に従ってください
-
-### HTML & CSS (SCSS)
-
-- **クラス名**: BEM (Block Element Modifier) 方式を採用し、`.[接頭語]-block__element--modifier` の形式で命名します。
-- **ID 名**: キャメルケースを使用し、`#js-camelCaseId` の形式で命名します。ID は JS で呼び出しを行う要素のみに使用してください。
-
-### JavaScript
-
-- **変数**: キャメルケースを使用し、`let myVariable` の形式で命名します。
-- **関数**: 動詞を先頭にしたキャメルケースを使用し、`function performAction()` の形式で命名します。
-
-## プロジェクト全体構成
-
-プロジェクト管理を効率化するため、以下のようなファイル構成を採用します
-
-```plaintext
-project/
-|
-|-- assets/ # プロジェクトで使用するjs,画像など
-|
-|-- layout/ # プロジェクト全体で使用する共通パーツ
-|   |-- _header.html # ヘッダー
-|   |-- _footer.html # フッター
-|   |-- _head.html # メタデータなど
-|   |-- _...
-|
-|-- index.php # layout ファイルを include するページごとのファイル
-`-- ...
-```
+- **ホスティング**
+  - Vercel
 
 ## SCSS ファイル構成
-
-スタイル管理を効率化するため、以下のような SCSS ファイル構成を採用します
-
-- **ファイル構成**: FLOCSS 方式を採用します。
 
 ```plaintext
 scss/
 |
 |-- foundation/ # サイト全体で使用する変数や mixin など
 |   |-- _color.scss # color 変数
-|   |-- _variable.scss # color 以外の変数
 |   |-- _mixins.scss # @mixin 変数
 |   |-- _font.scss # フォント変数
 |   |-- _base.scss # 共通設定
 |   |-- _reset.scss # リセット css
-|   |-- _animation.scss # アニメーションとjsクラス
 |
 |-- components/ # 再利用可能な UI コンポーネント
 |   |-- _buttons.scss # ボタン
@@ -80,53 +45,26 @@ scss/
 |-- layout/ # 大枠のレイアウト定義
 |   |-- _header.scss # ヘッダー
 |   |-- _footer.scss # フッター
-|   |-- _main.scss # ページ内の body,main 部分
+|   |-- _main.scss # ページ内の body,main 部分等
 |   |-- _...
 |
 |-- project/ # ページ固有のスタイル
-|   |-- _index.scss # ホームページ
+|   |-- _index.scss # トップページ
 |   |-- _...
 |
 `-- style.scss # 上記のパーツをインポートするメインファイル
 ```
 
-### `foundation/`
+## テスト
 
-- **目的**: 変数、mixin など、Sass のヘルパーとツールを格納します。
-- **ルール**:
-  - `reset.scss`の編集は禁止です。ブラウザ間のスタイルの一貫性を保つために、このファイルはそのまま使用してください。
-  - `color.scss`のクラス名は`.c-[カラー名]`で定義します。
-  - margin などの font,color 以外の共通変数は`_variables.scss`に定義します。
-  - 再利用可能な mixin とメディアクエリは`_mixins.scss`に定義します。
-  - keyframe と js で追加するクラス名、スタイリングは`_animation.scss`に定義します。
+- **手動テスト**:
+  - 互換性テスト
+  - ユーザビリティテスト
 
-### `components/`
+### テスト仕様書
 
-- **目的**: ボタン、タイトル、カードなど、再利用可能な UI コンポーネントのスタイルを格納します。
-- **ルール**:
-  - コンポーネント化の基準はプロジェクト内で同様のコンポーネントが 3 つ以上使用される場合とします。
-  - 最小のスタイルのみを持たせ、なるべく margin や固定幅、高さを持たせないでください。
-  - 各コンポーネントのクラス名は`.c-[コンポーネント名]`で定義します。例: `.c-button`, `.c-card`。
+https://docs.google.com/spreadsheets/d/1-rC1CIOfi-JMN4pbmEX_XtGb2eCKODXAGwYYoZj_-JI/edit?usp=sharing
 
-### `layout/`
+## 参考
 
-- **目的**: サイトやアプリケーションのレイアウト部分（ヘッダー、フッターなど）のスタイルを格納します。
-- **ルール**:
-  - 複数のページ（もしくは全ページ）に共通して現れる大きい要素を定義します。
-  - 量産ページやテンプレートページのスタイルも layout に格納してください。
-  - クラス名は`.l-[ファイル名]`で定義します。例: `.l-header`, `.l-footer`。
-
-### `project/`
-
-- **目的**: 各ページ固有のスタイルを格納します。
-- **ルール**:
-  - ページ名に基づいたファイル名を使用します。例: `_index.scss`, `_contact.scss`。
-  - これらのファイルは、そのページに固有のスタイルのみを定義してください。
-  - コンポーネント間の余白は project に定義してください。
-  - クラス名は`.p-[ファイル名]-[セクション名]`で定義します。例: `.p-index-about`, `.p-contact__form`
-
-### `style.scss`
-
-- **目的**: すべての SCSS ファイルをインポートし、プロジェクト全体で一つの CSS ファイルにコンパイルします。
-- **ルール**:
-  - このファイルはインポート専用です。直接スタイルを記述しないでください。
+- **デザイン**:https://webdesigner-go.com/coding-practice/
