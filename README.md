@@ -3,7 +3,7 @@
 架空のコーポレートサイト制作
 
 ## URL
-以下のURLより実際の挙動を確認できます。
+URLより実際の挙動を確認できます。
 https://web-production-practice.vercel.app/
 
 ## PON DESIGN
