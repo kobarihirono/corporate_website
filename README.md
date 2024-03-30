@@ -57,12 +57,11 @@ scss/
 
 ## テスト
 
-- **手動テスト**:
+- **手動テスト**
   - 互換性テスト
   - ユーザビリティテスト
 
-### テスト仕様書
-
+- **テスト仕様書**:Googleスプレッドシート
 https://docs.google.com/spreadsheets/d/1-rC1CIOfi-JMN4pbmEX_XtGb2eCKODXAGwYYoZj_-JI/edit?usp=sharing
 
 ## 参考
