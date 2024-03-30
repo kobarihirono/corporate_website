@@ -2,6 +2,10 @@
 
 架空のコーポレートサイト制作
 
+## URL
+以下のURLより実際の挙動を確認できます。
+https://web-production-practice.vercel.app/
+
 ## PON DESIGN
 https://github.com/kobarihirono/webProduction_practice/assets/131847306/45da631c-cb55-4f50-b2fa-10bcc219eb0c
 
