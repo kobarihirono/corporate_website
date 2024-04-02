@@ -68,6 +68,6 @@ scss/
 - **テスト仕様書**:Googleスプレッドシート
 https://docs.google.com/spreadsheets/d/1-rC1CIOfi-JMN4pbmEX_XtGb2eCKODXAGwYYoZj_-JI/edit?usp=sharing
 
-## 参考
+## 引用
 
 - **デザイン**:https://webdesigner-go.com/coding-practice/
