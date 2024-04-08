@@ -2,7 +2,14 @@
 
 架空のコーポレートサイト制作
 
+## URL
+URLより実際の挙動を確認できます。
+https://web-production-practice.vercel.app/
+
 ## PON DESIGN
+https://github.com/kobarihirono/webProduction_practice/assets/131847306/45da631c-cb55-4f50-b2fa-10bcc219eb0c
+
+https://github.com/kobarihirono/webProduction_practice/assets/131847306/3089acf1-8b46-4a8a-9758-d75f97319e43
 
 ## 使用技術
 
@@ -57,14 +64,13 @@ scss/
 
 ## テスト
 
-- **手動テスト**:
+- **手動テスト**
   - 互換性テスト
   - ユーザビリティテスト
 
-### テスト仕様書
-
+- **テスト仕様書**:Googleスプレッドシート
 https://docs.google.com/spreadsheets/d/1-rC1CIOfi-JMN4pbmEX_XtGb2eCKODXAGwYYoZj_-JI/edit?usp=sharing
 
-## 参考
+## 引用
 
 - **デザイン**:https://webdesigner-go.com/coding-practice/
