@@ -7,10 +7,12 @@
     font-size: 14px;
     line-height: 25.2px;
     color: cl.$c-black;
+    width: 34%;
 }
 
 @include mq(sm, max) {
     .c-time {
         font-size: 12px;
+        width: auto;
     }
 }

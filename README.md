@@ -9,18 +9,18 @@
 このプロジェクトでは以下の技術を使用しています
 
 - **使用言語**
+
   - HTML
   - SCSS
   - jQuery
 
 - **デザインツール**
+
   - figma
 
 - **エディタ**
-  - VisualStudio Code
 
-- **テスト**
-  - MAMP
+  - VisualStudio Code
 
 - **ホスティング**
   - Vercel
