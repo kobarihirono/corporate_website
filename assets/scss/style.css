@@ -978,11 +978,13 @@ button {
   font-size: 14px;
   line-height: 25.2px;
   color: #000000;
+  width: 34%;
 }
 
 @media screen and (max-width: 640px) {
   .c-time {
     font-size: 12px;
+    width: auto;
   }
 }
 .c-newsIcon {
@@ -1361,13 +1363,13 @@ button {
   }
 }
 .p-index-news {
-  width: 68%;
+  width: 54%;
   margin: auto;
 }
 .p-index-news .p-index-news__inner {
   display: flex;
   justify-content: space-between;
-  gap: 36px;
+  gap: 50px;
   margin-top: 64px;
 }
 .p-index-news .p-index-news__list {

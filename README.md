@@ -16,14 +16,17 @@ https://github.com/kobarihirono/webProduction_practice/assets/131847306/3089acf1
 このプロジェクトでは以下の技術を使用しています
 
 - **使用言語**
+
   - HTML
   - SCSS
   - jQuery
 
 - **デザインツール**
+
   - figma
 
 - **エディタ**
+
   - VisualStudio Code
 
 - **ホスティング**

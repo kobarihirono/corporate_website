@@ -2,13 +2,13 @@
 @use "../foundation/mixin" as bp;
 
 .p-index-news {
-    width: 68%;
+    width: 54%;
     margin: auto;
 
     .p-index-news__inner {
         display: flex;
         justify-content: space-between;
-        gap: 36px;
+        gap: 50px;
         @include index-margin;
     }
 
