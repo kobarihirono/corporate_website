@@ -19,6 +19,9 @@ https://github.com/kobarihirono/webProduction_practice/assets/131847306/3089acf1
 
   - HTML
   - SCSS
+ 
+- **フレームワーク**
+  
   - jQuery
 
 - **デザインツール**
@@ -68,9 +71,10 @@ scss/
   - 互換性テスト
   - ユーザビリティテスト
 
-- **テスト仕様書**:Googleスプレッドシート
+- **テスト仕様書**
 https://docs.google.com/spreadsheets/d/1-rC1CIOfi-JMN4pbmEX_XtGb2eCKODXAGwYYoZj_-JI/edit?usp=sharing
 
 ## 引用
 
-- **デザイン**:https://webdesigner-go.com/coding-practice/
+- **デザイン**
+https://webdesigner-go.com/coding-practice/
